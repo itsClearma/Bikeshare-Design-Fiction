@@ -11,17 +11,19 @@ function setup(){
 function draw(){
   background("#010a6c");
   resizeCanvas(windowWidth, windowWidth/3);
+
   for(i=0; i<windowWidth*0.02; i++){
     strokeWeight(windowWidth*0.0625*0.5);
     stroke(1-i*10, 10-i*10, 108-i*10);
-    ellipse(0, 0, 100+i*windowHeight*0.125, 100+i*windowHeight*0.125);
+    ellipse(0, 0, 100+i*windowHeight*0.17, 100+i*windowHeight*0.17);
   }
 
-  strokeWeight(windowWidth*0.0625*0.5);
+  strokeWeight(windowWidth*0.0625*0.75);
   stroke(0);
   fill(0, 0);
   translate(0, 0);
-  rotate(frameCount/50);
-  ellipse(0, 0, windowWidth*0.8625/3, windowWidth*0.8625/3);
+  rotate(frameCount/35);
+  ellipse(0, 0, windowWidth*0.8625/3.25, windowWidth*0.8625/3.25);
+  noFill();
   image(wheel, -windowWidth/6, -windowWidth/6, windowWidth/3, windowWidth/3);
 }
