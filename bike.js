@@ -1,19 +1,29 @@
 let bike;
+let movement;
 
 function preload(){
   bike = loadImage("images/bikeIcon.png");
 }
 
 function setup() {
-    createCanvas(1300, 100, WEBGL, document.getElementById("bike"));
+  createCanvas(windowWidth, windowWidth/12, WEBGL, document.getElementById("bike"));
+  movement = -windowWidth/2;
 }
 
 function draw() {
+  
   background("#CF21FF");
-  push();
-  scale(-0.2, 0.2);
-  image(bike, constrain(frameCount*-100, -6450, 0), height/2, 623, 407);
-  strokeWeight(20);
-  line(0, 450, constrain(frameCount*-96.5, -6300, 0), 450);
-  pop();
+  image(bike, movement-(windowWidth/12), -windowWidth/27, (windowWidth/9.75), 0.6532905297*(windowWidth/9.55));
+  strokeWeight(windowWidth/250);
+  line(-windowWidth/2, windowWidth/30, movement, windowWidth/30);
+
+  if (movement < windowWidth*0.45){
+    movement = movement + 15;
+  }
+
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowWidth/12);
+  movement = -windowWidth/2;
 }
