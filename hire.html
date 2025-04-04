@@ -65,21 +65,41 @@
 
 
         <div class="container-fluid" style="position: relative; text-align: center; background-image: linear-gradient(transparent, #d9dbeb), url(images/busStopMockUp.png); background-size:cover; background-position:center; background-repeat:no-repeat; height:auto;">
-            <div class="container p-5" style="max-width:70%; height:auto;">
-                <div class="row rounded">
-                    <div class="col-sm-12 col-lg-6 container rounded">
-                        <div class="p-5 rounded" style="background-color:black;">
-                            <div style="aspect-ratio:1/1; width:100%; background-color:black;" class="rounded mb-3">Location Pending</div>
-                            <div class="row rounded" style="justify-content:space-evenly;">
-                                <a href="#" class="col-3 col-md-3 rounded mb-3 text-truncate text-wrap" style="background-color:#ff2079; color:white; aspect-ratio:1/1;"><div class="mt-3">FIND NEAREST BIKE</div></a>
-                                <a href="#" class="col-3 col-md-3 rounded mb-3 text-truncate text-wrap" style="background-color: #cf21ff; color:white; aspect-ratio:1/1;"><div class="mt-3">PICK DESTINATION</div></a>
-                                <a href="#" class="col-3 rounded mb-3 text-truncate text-wrap" style="background-color:#010a6c; color:white; aspect-ratio:1/1;"><div class="mt-3">SAVE CURRENT LOCATION</div></a>
+            <div class="container-fluid p-5" style="height:auto;">
+                <div class="row rounded" style="justify-content:space-evenly;">
+                    <div class="col-sm-11 col-md-5 col-xl-4 container rounded">
+                        <div class="p-3 rounded mb-3" style="background-color:black;">
+                            <div style="aspect-ratio:1/1; width:100%; background-color:beige;" class="rounded">
+                                <div class="p-3" style="font-size:2.65vw;">SCAN THE QR CODE ON THE<img src="images/lightningBolt.svg" class="container-fluid" style ="height:10%;">HANDLE TO CONNECT</div>
+                                <div class="p-3 spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            <form class="d-flex container-fluid mt-3" role="search" style="width:95%;">
+                                <input class="form-control me-2" type="search" placeholder="ENTER DESTINATION" aria-label="search">
+                                <button class="btn btn-outline-light" type="submit">⌕</button>
+                            </form>
+                            <div class="dropdown">
+                                <button style="width:95%; background-color:#010a6c; border:none;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  LANDMARK DESTINATIONS
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">CABOT CIRCUS</a></li>
+                                  <li><a class="dropdown-item" href="#">HARBOUR</a></li>
+                                  <li><a class="dropdown-item" href="#">CLIFTON SUSPENSION BRIDGE</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 container rounded">
-                        <div class="p-5 rounded" style="background-color:black; color:white;">
-                            Simply scan the QR Code with your phone to connect to our Cyclus navigation service.<br>Tap your card or use your phone to pay the distance,<br>and off you go!
+                    <div class="col-sm-11 col-md-5 col-xl-4 container rounded">
+                        <div class="p-3 rounded mb-3" style="background-color:black; color:white;">
+                            <div class="display-6 p-3">HOW TO BIKE WITH US:</div>
+                            <div class="p-3">SCAN THE BIKES QR CODE WITH YOUR DEVICE TO CONNECT TO BIKE GPS</div>
+                            <div class="p-3">ENTER DESTINATION ON YOUR DEVICE TO PLAN JOURNEY</div>
+                            <div class="p-3">PAYMENT IS CALCULATED, PAY VIA CARD READER OR APP.</div>
+                            <div class="p-3">CYCLE</div>
+                            <div class="p-3">PARK</div>
+                            <div class="display-6 p-3">SORTED</div>
                         </div>
                     </div>
                 </div>
